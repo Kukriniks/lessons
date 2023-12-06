@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW5_1", "HW5_1\HW5_1.csproj", "{68935392-B15C-4663-8119-FB3495E0C299}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fact", "fact\fact.csproj", "{91DE6AEE-9B5B-4624-BEC3-AD6966428D88}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HM_6", "HM_6", "{A3191519-22CB-4C4F-BB68-97EB99DEDA29}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddToArray", "AddToArray\AddToArray.csproj", "{CEF04500-171B-4C57-A591-5B0C4915D00E}"
@@ -17,14 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{68935392-B15C-4663-8119-FB3495E0C299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{68935392-B15C-4663-8119-FB3495E0C299}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{68935392-B15C-4663-8119-FB3495E0C299}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{68935392-B15C-4663-8119-FB3495E0C299}.Release|Any CPU.Build.0 = Release|Any CPU
-		{91DE6AEE-9B5B-4624-BEC3-AD6966428D88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{91DE6AEE-9B5B-4624-BEC3-AD6966428D88}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{91DE6AEE-9B5B-4624-BEC3-AD6966428D88}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{91DE6AEE-9B5B-4624-BEC3-AD6966428D88}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CEF04500-171B-4C57-A591-5B0C4915D00E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CEF04500-171B-4C57-A591-5B0C4915D00E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEF04500-171B-4C57-A591-5B0C4915D00E}.Release|Any CPU.ActiveCfg = Release|Any CPU
