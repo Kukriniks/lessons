@@ -9,9 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fact", "fact\fact.csproj", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HM_6", "HM_6", "{A3191519-22CB-4C4F-BB68-97EB99DEDA29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddToArray", "AddToArray\AddToArray.csproj", "{CEF04500-171B-4C57-A591-5B0C4915D00E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddToArray", "AddToArray\AddToArray.csproj", "{CEF04500-171B-4C57-A591-5B0C4915D00E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "matrix", "matrix\matrix.csproj", "{468342B3-F61F-4BAF-BE61-326C809C0B1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HM_7", "HM_7", "{FB3C2EC5-1F80-428A-B437-B7B9D236C2E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW_7_task1", "HW_7\HW_7_task1\HW_7_task1.csproj", "{6550FD26-BC4D-4859-A092-B3FD20FAE76C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +39,10 @@ Global
 		{468342B3-F61F-4BAF-BE61-326C809C0B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{468342B3-F61F-4BAF-BE61-326C809C0B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{468342B3-F61F-4BAF-BE61-326C809C0B1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6550FD26-BC4D-4859-A092-B3FD20FAE76C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6550FD26-BC4D-4859-A092-B3FD20FAE76C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6550FD26-BC4D-4859-A092-B3FD20FAE76C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6550FD26-BC4D-4859-A092-B3FD20FAE76C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
