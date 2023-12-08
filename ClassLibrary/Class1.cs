@@ -40,9 +40,8 @@
     }
     public class Cone
     {
-        public double radius { get; }
-        public double hight { get; }
-
+        private double radius { get; }
+        private double hight { get; }
 
         public Cone(double radius, double hight)
         {
