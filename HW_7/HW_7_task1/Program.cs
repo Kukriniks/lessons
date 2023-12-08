@@ -1,5 +1,7 @@
-﻿namespace HW_7_task1
+﻿using ClassLibrary;
+namespace HW_7_task1
 {
+   
     internal class Program
     {
             static void Main(string[] args)
