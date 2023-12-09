@@ -1,4 +1,5 @@
-﻿namespace ClassLibrary
+﻿
+namespace ClassLibrary
 {
     public class ArrayWorker
     {
@@ -36,28 +37,6 @@
                 array[j] = tepmp;
             }
             return array;
-        }
-    }
-    public class Cone
-    {
-        private double radius { get; }
-        private double hight { get; }
-
-        public Cone(double radius, double hight)
-        {
-            this.radius = radius;
-            this.hight = hight;
-        }
-
-        public double getFullArea()
-        {
-            return getBaseArea() + Math.PI * radius * (Math.Sqrt(Math.Pow(radius, 2) + Math.Pow(hight, 2)));
-            //Sп = Sо  + Sб = Π*r2 + П*r*(√(r2+h2))
-        }
-
-        public double getBaseArea()
-        {
-            return Math.PI * Math.Pow(radius, 2);
         }
     }
 }
