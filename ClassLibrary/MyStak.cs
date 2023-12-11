@@ -35,7 +35,7 @@
             }
             else
             {
-                throw new InvalidOperationException("Стек пуст"); //не знал как ошибку выбросить подсмотрел 
+                throw new InvalidOperationException("Стек пуст"); //не знал как ошибку выбросить, подсмотрел 
             }
         }
     }
