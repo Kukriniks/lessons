@@ -10,7 +10,10 @@ namespace ClassLibrary
             {
                 return array = array ?? System.Array.Empty<int>(); //avoid null reference exception                
             }
-            set { array = value; }
+            set 
+            {
+                array = value;
+            }
         }
 
         public ArrayWorker(int[] array)

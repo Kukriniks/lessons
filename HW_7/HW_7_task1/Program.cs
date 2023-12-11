@@ -10,12 +10,7 @@ namespace HW_7_task1
                 int[] arrInit2 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
                 ArrayWorker arr1 = new ArrayWorker();
-                Console.WriteLine(arr1.Array);
 
-                foreach (var item in arr1.Array)
-                {
-                    Console.Write(item + " ");
-                }
                 foreach (var item in arr1.InvertArray(arrInit1))
                 {
                     Console.Write(item + " ");
