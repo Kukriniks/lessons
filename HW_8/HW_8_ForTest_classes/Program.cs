@@ -1,4 +1,5 @@
 ﻿using HW_8_Library;
+using HW_8_Library.Transport;
 
 namespace HW_8_ForTest_classes
 {
@@ -7,12 +8,14 @@ namespace HW_8_ForTest_classes
         static void Main(string[] args)
         {
 
-
             #region task3
             //task 3
             int[] arr = { 2, 4, 7, 8, 4, 2, 15, 7656, 3, 3, 2 };
-            int maxValue = IntExtension.intMaxValue(arr);
+            int maxValue = arr.intMaxValue();
+
             #endregion task3
+
+
             #region task 1,4
             //task 1,4
             Item wallet = new Item(); //1
@@ -23,7 +26,7 @@ namespace HW_8_ForTest_classes
             Item penDrive = new Item(); //6
             Item copyBook = new Item(); //7
             Item lapTop = new Item(); //8
-            Item lanchBox = new Item(); //9         
+            Item lanchBox = new Item(); //9
 
             // с конструктором было-бы удобнее, но в задании нету )
             wallet.SetName("wallet");
@@ -47,12 +50,25 @@ namespace HW_8_ForTest_classes
             bag.addToBag(penDrive);
             bag.addToBag(copyBook);
             bag.addToBag(lapTop);
-            bag.addToBag(lanchBox); //recive bag is full
+            bag.addToBag(lanchBox); //receive bag is full
 
             bag.removeFromBag(5, out Item item);
             Console.WriteLine(item.GetName());//добавляет в первую свободную ячейку массива )
             bag.addToBag(lanchBox);
             #endregion task 1,4
+
+            #region Transport
+            //task 2
+            Car car1 = new Car();
+            car1.Engine = new Engine("gas", true);
+            car1.Move();
+
+            Plain plain1 = new Plain();
+            plain1.Engine = new Engine("reactive",true);
+            plain1.isGoodWeather = true;
+            plain1.Move();
+
+            #endregion Transport
 
         }
     }
