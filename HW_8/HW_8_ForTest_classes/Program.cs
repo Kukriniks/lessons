@@ -7,14 +7,12 @@ namespace HW_8_ForTest_classes
     {
         static void Main(string[] args)
         {
-
             #region task3
             //task 3
             int[] arr = { 2, 4, 7, 8, 4, 2, 15, 7656, 3, 3, 2 };
             int maxValue = arr.intMaxValue();
 
             #endregion task3
-
 
             #region task 1,4
             //task 1,4
@@ -69,7 +67,6 @@ namespace HW_8_ForTest_classes
             plain1.Move();
 
             #endregion Transport
-
         }
     }
 }
