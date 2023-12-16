@@ -13,7 +13,7 @@
 
         public virtual void Live() //each species has own Live style )
         {
-
+            // не придумал что сюда можно впихнуть по умолчанию оставил просто пустой метод
         }
 
         public virtual int Eat(int HungryLevel, int mealValue, int stomachFull)
