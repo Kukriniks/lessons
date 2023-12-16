@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
-
-namespace Animal
+﻿namespace Animal
 {
     internal class Herbivore : Animal
     {
@@ -13,7 +6,7 @@ namespace Animal
         readonly int mealValue = 2;
         public int stomachFull;
         public override int HungryLevel { get; set; }
-   
+
         public override void Live()
         {
             if (HungryLevel < stomachFull)
@@ -22,7 +15,6 @@ namespace Animal
                 Console.WriteLine("need to go to eat grass :)");
                 HungryLevel = Eat(HungryLevel, mealValue, stomachFull);
             }
-
         }
         public override int Eat(int HungryLevel, int mealValue, int stomachFull)
         {

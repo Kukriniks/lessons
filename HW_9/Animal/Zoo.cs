@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Animal
+﻿namespace Animal
 {
     internal class Zoo
     {
         List<Animal> predators = new List<Animal>();
         List<Animal> herbiores = new List<Animal>();
 
-       public  void AddAnimal(Animal animal)
+        public void AddAnimal(Animal animal)
         {
             if (animal is Herbivore)
             {
