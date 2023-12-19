@@ -13,7 +13,11 @@
 
         public virtual void Live() //each species has own Live style )
         {
+<<<<<<< HEAD
             // не придумал что сюда можно впихнуть по умолчанию, оставил просто пустой метод
+=======
+            // не придумал что сюда можно впихнуть по умолчанию оставил просто пустой метод
+>>>>>>> HW_9
         }
 
         public virtual int Eat(int HungryLevel, int mealValue, int stomachFull)
