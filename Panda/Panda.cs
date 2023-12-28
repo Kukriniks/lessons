@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Panda
+﻿namespace Panda
 {
     internal class Panda
     {
@@ -16,11 +8,11 @@ namespace Panda
         private int DeFence { get; set; }
         public Color PandaColor { get; init; }
         public Gender PandaGender { get; init; }
-       
+
         public Panda(string name, Color color, Gender gender)
         {
             Random rnd = new Random();
-            this.name = name;         
+            this.name = name;
             HP = rnd.Next(10, 20);
             DeFence = rnd.Next(10, 20);
             attack = rnd.Next(20, 30);
@@ -28,7 +20,7 @@ namespace Panda
             this.PandaColor = color;
         }
 
-        public static Panda operator + (Panda panda1, Panda panda2)
+        public static Panda operator +(Panda panda1, Panda panda2)
         {
             if (panda1.PandaGender != panda2.PandaGender && panda1 != null && panda2 != null)
             {
@@ -38,13 +30,13 @@ namespace Panda
                 Gender randomGender = (Gender)values.GetValue(random.Next(values.Length));
                 return new Panda(panda1.name + panda2.name, panda1.PandaColor, randomGender);
             }
-            else 
+            else
             {
                 Console.WriteLine("Same gender or NULL , impossible make new panda");
                 return null;
             }
         }
-        public static Panda operator - (Panda panda1, Panda panda2)
+        public static Panda operator -(Panda panda1, Panda panda2)
         {
             if (panda1 != null && panda2 != null)
             {
@@ -65,15 +57,15 @@ namespace Panda
                 return true;
             }
             else
-            { 
+            {
                 Panda panda = (Panda)obj;
                 return (this.HP == panda.HP) && (this.PandaColor == panda.PandaColor);
-            }            
+            }
         }
     }
 
     public enum Color
-    { 
+    {
         White_Black,
         Black,
         White
