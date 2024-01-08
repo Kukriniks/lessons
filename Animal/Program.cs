@@ -9,7 +9,7 @@
             Elephant el3 = new Elephant("Elif", 4, "uuuu", "grey", 30);
             Cat cat = new Cat("Miu", 4, "miu", "stripes");
             Bear bear = new Bear("Baloo", 4, "rrrUUU", "black");
-            
+
 
             Object obj = new();
             Zoo zoo = new Zoo();
@@ -23,6 +23,7 @@
 
             Console.WriteLine(el.Equals(cat));
             Console.WriteLine(Elephant.Equals(el, el2));
+            Console.WriteLine(cat.typeC);
         }
     }
 }

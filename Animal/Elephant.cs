@@ -6,15 +6,8 @@
         private string colour;
         private uint size;
 
-        public Elephant(string Name, int NumOfLegs, string sound, string color, uint size) : base(Name, NumOfLegs)
-        {
-            this.sound = sound;
-            this.colour = color;
-            this.size = size;
-        }
-
-        string IHerbivore.typeH { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        string IHerbivore.foodH { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string typeH { get; set; }
+        public string foodH { get; set; }
 
         public void DisplayAnimal()
         {
@@ -51,6 +44,11 @@
             return (base.Name.GetHashCode() << 2) ^ 2;
         }
 
-
+        public Elephant(string Name, int NumOfLegs, string sound, string color, uint size) : base(Name, NumOfLegs)
+        {
+            this.sound = sound;
+            this.colour = color;
+            this.size = size;
+        }
     }
 }
