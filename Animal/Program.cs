@@ -23,7 +23,6 @@
 
             Console.WriteLine(el.Equals(cat));
             Console.WriteLine(Elephant.Equals(el, el2));
-            Console.WriteLine(cat.typeC);
         }
     }
 }
