@@ -19,7 +19,7 @@
             pList.Add(woman1);
             pList.Add(woman2);
             pList.Add(woman3);
-
+            
             Person[] arPerson = new Person[] { man1, man2, man3, woman1, woman2, woman3 };
             Array.Sort(arPerson,new PersonComparer());
             foreach (var p in arPerson)
