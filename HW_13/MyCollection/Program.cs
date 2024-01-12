@@ -12,9 +12,6 @@
             var test = new MyListNode(9, "nine");
             myList.Add(test);
             myList.Remove(test);
-
-
-
         }
     }
 }
