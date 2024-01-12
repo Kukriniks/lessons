@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// <copyright file="ISalable.cs" company="Anton Nadolsky">
+// Copyright (C) Anton Nadolsky. All rights reserved.
+// </copyright>
 
-namespace Shop
+namespace Shopping
 {
-    internal interface ISalable
-    {
-        public int Price { get; set; }
-        public string Name { get; set; }
-    }
+	internal interface ISalable
+	{
+		public int Price { get; set; }
+
+		public string Name { get; set; }
+	}
 }
