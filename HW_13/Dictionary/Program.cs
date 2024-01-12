@@ -32,11 +32,11 @@ class Program
             myDict.Add(i, word);
         }
 
-        string[] fromDictionary = new string[wordCount];
+        string[]? fromDictionary = new string[wordCount];
 
         for (int i = 0; i < wordCount; i++) //add wordCount random words from dictionary to the string array
         {
-             myDict.TryGetValue(random.Next(0, myDict.Count),out fromDictionary[i]);
+             myDict.TryGetValue(random.Next(0, myDict.Count), out fromDictionary[i]);
         }
         return fromDictionary;
     }
