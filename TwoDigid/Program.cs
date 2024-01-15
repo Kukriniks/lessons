@@ -32,7 +32,7 @@
 
 			try
 			{
-				Console.WriteLine("try ti divide :)");
+				Console.WriteLine("try too divide :)");
 				Console.WriteLine(digit[0] / digit[1]);
 			}
 			catch (DivideByZeroException ex)
