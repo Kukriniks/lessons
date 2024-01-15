@@ -20,7 +20,7 @@
 						count++;
 					}
 					else
-						throw new ArgumentOutOfRangeException("0-255");
+						throw new ArgumentOutOfRangeException("value have to bee  in a range 0-255");
 
 				}
 				catch (FormatException ex)
