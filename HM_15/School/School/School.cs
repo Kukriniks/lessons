@@ -19,6 +19,11 @@
             OnAddPupil(new AddPupilEventArgs(pupil));
         }
 
+        public void OnChildGrownUP(object? sender, GrowedChildEventArgs e)
+        {
+            AddPupil(e.Pupil);
+        }
+
         public School()
         {
             this.pupils = new();

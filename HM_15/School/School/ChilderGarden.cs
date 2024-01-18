@@ -1,34 +1,52 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace School
 {
     internal class ChilderGarden
     {
+        public event EventHandler<GrowedChildEventArgs> ChildGrownUP;
 
-        private List<Child> children = new List<Child>();
+        private List<Child>? children;
+
+        protected virtual void OnChildGrownUP(GrowedChildEventArgs e)
+        {
+            ChildGrownUP?.Invoke(this, e);
+        }
 
         public void AddChild(Child child)
-        { 
+        {
             children.Add(child);
         }
-       
-        private void RemoveChild(Child child) 
+
+        public void RemoveChild(Child child)
         {
             children.Remove(child);
         }
 
-        public void StartGrowUP(List<Child> children)
-        { 
-            foreach (Child child in children)
+        private void StartGrowUP()
+        {
+            for (int i = 0; i < children.Count; i++)
             {
-                child.Age++;
+                Console.WriteLine(children[i] + " early to school");
+                children[i].Age++;
+                if (children[i].Age >= 6)
+                {
+                    OnChildGrownUP(new GrowedChildEventArgs(children[i]));
+                    RemoveChild(children[i]);
+                }
             }
         }
-        
 
+        public void CheckChildren()
+        {
+            if (children.Exists(x => x.Age < 6))
+            {
+                StartGrowUP();
+            }
+        }
+
+        public ChilderGarden()
+        {
+            children = new();
+        }
     }
 }
