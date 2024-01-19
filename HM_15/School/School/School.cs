@@ -2,8 +2,6 @@
 {
     internal class School
     {
-        //private SchoolDirector director = new SchoolDirector();
-
         public event EventHandler<AddPupilEventArgs>? PupilAdded;
 
         private List<SchoolBoy> pupils;

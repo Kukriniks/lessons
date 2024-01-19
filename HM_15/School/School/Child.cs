@@ -12,9 +12,11 @@
             Name = name;
             SurName = surName;
         }
+
         public Child()
         {
         }
+
         public override string ToString()
         {
             return $"Name: {Name}  SurName: {SurName} Age: {Age}";
