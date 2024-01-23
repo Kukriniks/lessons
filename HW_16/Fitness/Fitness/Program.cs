@@ -22,7 +22,7 @@ namespace Fitness
                         from m2 in years
                         group m2.Value by years.Key into years2 //группируем месяцы // select years2;
                         select new { Year = years2.Key, Month = years2.Aggregate((x, y) => x + y) }) //in value Month sum of fitness hours
-                       .OrderByDescending(x => x.Month).FirstOrDefault();
+                       .OrderByDescending(x => x.Month).ThenBy(x=>x.Year).FirstOrDefault();
             //так тут и не придумал как получить несколько значений, если сумма часов в месяце вдруг окажется одинаковая, ничегоне выходит :(
 
             Console.WriteLine($"In {test.Year} was {test.Month} total fitness hours");          
