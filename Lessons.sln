@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fitness", "Fitness", "{C63A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fitness", "HW_16\Fitness\Fitness\Fitness.csproj", "{6AD686FE-DDC8-408D-8142-A440A3354725}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarAndBuyer", "HW_16\CarAndBuyer\CarAndBuyer.csproj", "{0AC8AE1F-36D2-464A-8B04-7AE0F85B36B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +25,17 @@ Global
 		{6AD686FE-DDC8-408D-8142-A440A3354725}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AD686FE-DDC8-408D-8142-A440A3354725}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AD686FE-DDC8-408D-8142-A440A3354725}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AC8AE1F-36D2-464A-8B04-7AE0F85B36B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AC8AE1F-36D2-464A-8B04-7AE0F85B36B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AC8AE1F-36D2-464A-8B04-7AE0F85B36B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AC8AE1F-36D2-464A-8B04-7AE0F85B36B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6AD686FE-DDC8-408D-8142-A440A3354725} = {C63AAC51-5B90-4502-B56D-3BB9285B0B4F}
+		{0AC8AE1F-36D2-464A-8B04-7AE0F85B36B0} = {C63AAC51-5B90-4502-B56D-3BB9285B0B4F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {517E5D72-87FD-44DA-B303-2C48984C946F}

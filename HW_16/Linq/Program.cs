@@ -30,6 +30,13 @@
             //d)Извлечь из нее все положительные двузначные числа, отсортировав их по возрастанию
             var odds = ints2.Where(x=> x > 9 && x < 100).Order().ToArray();
             #endregion
+
+            #region task Median
+            string[] str1 = { "123","345" };
+            var median = str1.Median();
+            #endregion
+
+
         }
     }
 }
