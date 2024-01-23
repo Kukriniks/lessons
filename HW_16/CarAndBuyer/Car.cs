@@ -8,11 +8,11 @@ namespace CarAndBuyer
         public string Name { get; set; }
         public int Age { get; set; }
 
-        public Car(int id, int age, string carNamae)
+        public Car(int id, int age, string carName)
         {
             ID = id;
-            Name = carNamae;
-            Age = age;            
+            Name = carName;
+            Age = age;
         }
     }
 }

@@ -10,11 +10,10 @@ namespace Linq
                 throw new InvalidOperationException("Cannot compute median for a null or empty set or in sequence less 3 elements");
             }
 
-            var sourceList = source.ToList(); 
-           
+            var sourceList = source.ToList();
+
             int medianIndex = sourceList.Count / 2;
-            return sourceList[medianIndex];            
+            return sourceList[medianIndex];
         }
     }
 }
- 

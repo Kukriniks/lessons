@@ -22,17 +22,17 @@
             var positiveInts = ints2.Where(x => x > 0).ToArray();
 
             //b)Извлечь из нее все нечетные числа, сохранив их исходный порядок следования и удалив все вхождения повторяющихся элементов, кроме первых.
-            var oddsInt = ints2.Where(x => x % 2 !=0).Skip(1).Distinct().ToArray();
+            var oddsInt = ints2.Where(x => x % 2 != 0).Skip(1).Distinct().ToArray();
 
             //c)Извлечь из нее все четные отрицательные числа, поменяв порядок извлеченных чисел на обратный.
             var evenInts = ints2.Where(x => x % 2 == 0 && x < 0).Reverse().ToArray(); // -20 only
 
             //d)Извлечь из нее все положительные двузначные числа, отсортировав их по возрастанию
-            var odds = ints2.Where(x=> x > 9 && x < 100).Order().ToArray();
+            var odds = ints2.Where(x => x > 9 && x < 100).Order().ToArray();
             #endregion
 
             #region task Median
-            string[] str1 = { "123","345" };
+            string[] str1 = { "123", "345" };
             var median = str1.Median();
             #endregion
 
