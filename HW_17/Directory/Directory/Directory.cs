@@ -6,11 +6,11 @@
 
         /// <summary>
         /// Method receive directory path and fileMask (optional)
-        /// return count of files
+        /// 
         /// </summary>
         /// <param name="dirPath"></param>
         /// <param name="fileMask"></param>
-        /// <returns></returns>
+        /// <returns>Int count of files</returns>
         /// <exception cref="DirectoryNotFoundException"></exception>
         public static int GetFilesCount(string dirPath, string fileMask = "*")
         {
@@ -27,11 +27,11 @@
         }
 
         /// <summary>
-        ///  Method receive directory path and fileMask (optional) return FileInfo[]
+        ///  Method receive directory path and fileMask (optional)  
         /// </summary>
         /// <param name="dirPath"></param>
         /// <param name="fileMask"></param>
-        /// <returns></returns>
+        /// <returns>FileInfo[]</returns>
         /// <exception cref="DirectoryNotFoundException"></exception>
         public static FileInfo[] GetFilesInfo(string dirPath, string fileMask = "*")
         {
