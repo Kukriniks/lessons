@@ -5,11 +5,11 @@
         static void Main(string[] args)
         {
             string workingFolder = "D:\\temp";
+
             #region task1
             var count = DirectoryInf.GetFilesCount(workingFolder, "*.txt");
             var fileInfo = DirectoryInf.GetFilesInfo(workingFolder, "*.txt");
             #endregion
-
             #region task2          
 
             for (int i = 0; i < 20; i++)
@@ -28,7 +28,6 @@
                 Directory.Delete(dir, true);
             }
             #endregion
-
             #region task 3
             string context = "Привет с первой строки" + Environment.NewLine + Environment.NewLine + "Привет с 3й строки";
             File.WriteAllText(Path.Combine(workingFolder, "testFile.txt"), context);
@@ -37,7 +36,6 @@
             { Console.WriteLine(line); }
 
             #endregion
-
             #region task 5
 
             string toFile = "HI, my name is tist file";
@@ -53,7 +51,6 @@
             }
             Console.WriteLine();
             #endregion
-
         }
     }
 }

@@ -24,7 +24,6 @@
                 var test = DirInfo.GetFiles(fileMask);
                 return DirInfo.GetFiles(fileMask).Length;
             }
-
         }
 
         /// <summary>
@@ -44,12 +43,7 @@
             else
             {
                 return DirInfo.GetFiles(fileMask);
-
-
             }
-
         }
-
-
     }
 }
