@@ -2,7 +2,7 @@
 {
     public class Plugin
     {
-       public void RunLogic(string message) => Console.WriteLine(message);
+        public void RunLogic(string message) => Console.WriteLine(message);
 
     }
 }
