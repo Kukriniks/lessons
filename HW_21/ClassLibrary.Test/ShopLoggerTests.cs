@@ -15,7 +15,7 @@ namespace ClassLibrary.Test
     {
       
         [Test]
-        public void ShopLoggerTest()
+        public void ShoudReturnCorrectStringShopLoggerTest()
         {
             //Arrange
             var databaseMoq = new Mock<IDb>();
@@ -33,10 +33,7 @@ namespace ClassLibrary.Test
             shoplogger.Info(message);
             //Assert
             databaseMoq.Verify(x => x.AddLogRecord($"INFO: {message}"));
-
         }
-
-
     }
 }
   
